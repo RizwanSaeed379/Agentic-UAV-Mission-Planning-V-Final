@@ -1,0 +1,70 @@
+
+=== ATTEMPT 1 — 2026-09-25 00:36:47 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: Anomaly was triggered during the action.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Ensure the UAV is stable before initiating RTL and consider checking for potential anomalies before executing critical commands.
+==========================================
+
+=== ATTEMPT 2 — 2026-09-25 00:52:14 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK reached=['WP_ALPHA'])
+Failure reason: Battery percentage dropped significantly and an anomaly was triggered during the RTL command execution.
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Ensure that the battery level is sufficient before initiating an RTL command to avoid unexpected disarming. Monitor for anomalies and take preventive measures to maintain mission continuity.
+==========================================
+
+=== ATTEMPT 3 — 2026-09-25 01:09:57 ===
+Outcome: COMPLETED (reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: The battery consumption was excessive, dropping from 95.0% to 11.0% during the loiter turns, and the UAV was forced to return to launch site (RTL) mode due to low battery. The mission progress was set back, and the anomaly was not fully investigated.
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS']
+Lessons learned: Optimize the loiter turns to minimize battery usage, possibly by reducing the number of turns or duration, and ensure continuous monitoring of battery health to avoid critical situations.
+==========================================
+
+=== ATTEMPT 4 — 2026-09-25 01:25:50 ===
+Outcome: COMPLETED (reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: Battery consumption was excessive, dropping from 95.0% to 14.0% after only 2 loiter turns, and the mode changed to MANUAL, indicating a potential issue with the autopilot system or low battery voltage.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS']
+Lessons learned: Limit the number of loiter turns to conserve battery and ensure that the system's battery voltage is within safe limits before initiating investigative maneuvers. Consider adding a check for battery voltage before performing such actions to avoid mission-critical failures.
+==========================================
+
+=== ATTEMPT 5 — 2026-09-25 02:18:21 ===
+Outcome: COMPLETED (reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: Battery depletion too rapid and mission mode changed to MANUAL, indicating a critical issue.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS']
+Lessons learned: Ensure to reduce altitude and groundspeed to conserve battery, and check for optimal flight parameters before initiating LOITER_TURNS.
+==========================================
+
+=== ATTEMPT 6 — 2026-09-26 13:08:54 ===
+Outcome: COMPLETED (reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: battery consumption increased
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: consider alternative descent methods to conserve battery
+==========================================
+
+=== ATTEMPT 7 — 2026-09-26 13:23:45 ===
+Outcome: COMPLETED (reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: mode change to MANUAL and anomaly response without achieving the thermal anomaly investigation goal
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS']
+Lessons learned: consider maintaining the LOITER_TURNS mode to ensure continued anomaly investigation and re-evaluate the mission mode change
+==========================================
+
+=== ATTEMPT 8 — 2026-09-26 13:47:31 ===
+Outcome: REASONING_FAILURE (ROUTE_ERROR reached=['WP_ALPHA'])
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS']
+Lessons learned: Consider reducing battery consumption; reevaluate mode change to MANUAL for more control
+==========================================
+
+=== ATTEMPT 9 — 2026-09-26 14:15:26 ===
+Outcome: COMPLETED (reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS']
+Lessons learned: Consider adjusting loiter turns to reduce battery consumption and conserve energy for the mission.
+==========================================
+
+=== ATTEMPT 10 — 2026-09-26 14:30:28 ===
+Outcome: COMPLETED (reached=['WP_ALPHA', 'WP_BRAVO'])
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS']
+Lessons learned: Consider adjusting the loiter turns to maintain a more consistent airspeed and heading. Monitor battery consumption more closely to avoid unexpected drops.
+==========================================

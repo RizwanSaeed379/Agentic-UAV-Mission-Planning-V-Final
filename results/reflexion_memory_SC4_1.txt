@@ -1,0 +1,42 @@
+
+=== ATTEMPT 1 — 2026-09-25 20:02:59 ===
+Outcome: CONSTRAINT_VIOLATION (GEOFENCE_VIOLATED (lat=33.7306 lon=72.9730 step=1) reached=[] terminal='')
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Maintain current flight parameters and consider optimizing the mission plan to reduce battery consumption.
+==========================================
+
+=== ATTEMPT 2 — 2026-09-25 20:12:21 ===
+Outcome: CONSTRAINT_VIOLATION (GEOFENCE_VIOLATED (lat=33.7308 lon=72.9721 step=1) reached=[] terminal='')
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Ensure the mission mode is set to AUTO to automatically follow waypoints. Consider optimizing the flight path to minimize battery consumption.
+==========================================
+
+=== ATTEMPT 3 — 2026-09-25 20:31:13 ===
+Outcome: CONSTRAINT_VIOLATION (GEOFENCE_VIOLATED (lat=33.7306 lon=72.9761 step=1) reached=[] terminal='')
+Failure reason: Battery consumption was excessive, and the UAV was forced into manual mode due to low battery, which is a significant issue.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Optimize the flight path and consider reducing speed or altitude to conserve battery. Ensure the mission plan accounts for potential battery depletion.
+==========================================
+
+=== ATTEMPT 4 — 2026-09-25 20:42:31 ===
+Outcome: CONSTRAINT_VIOLATION (GEOFENCE_VIOLATED (lat=33.7303 lon=72.9761 step=1) reached=[] terminal='')
+Failure reason: The aircraft reached the waypoint but did not land as expected, leading to a significant drop in battery level and an unexpected transition to manual mode.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Ensure the flight plan includes a landing sequence to conserve battery and maintain mission control. Review the waypoint logic to ensure it aligns with the mission objectives.
+==========================================
+
+=== ATTEMPT 5 — 2026-09-25 20:57:16 ===
+Outcome: CONSTRAINT_VIOLATION (GEOFENCE_VIOLATED (lat=33.7301 lon=72.9760 step=1) reached=[] terminal='')
+Failure reason: Battery consumption was significant, and the UAV switched to manual mode unexpectedly.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Monitor battery levels more closely and consider altitude constraints to preserve power. Ensure that the mission mode remains in AUTO to avoid unexpected transitions.
+==========================================
+
+=== ATTEMPT 6 — 2026-09-26 21:58:16 ===
+Outcome: COMPLETED (reached=[])
+Failure reason: NONE
+Commands issued: ['LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Consider monitoring battery levels more closely to avoid low-level returns. Review mission planning to ensure sufficient battery reserves.
+==========================================

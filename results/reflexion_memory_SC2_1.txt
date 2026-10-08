@@ -1,0 +1,140 @@
+
+=== ATTEMPT 1 — 2026-09-24 21:12:01 ===
+Outcome: TIMEOUT (max_dist_from_home=381m; max_dist_from_home=381m)
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Maintain current flight parameters for consistent mission progress.
+==========================================
+
+=== ATTEMPT 2 — 2026-09-24 21:17:29 ===
+Outcome: TIMEOUT (max_dist_from_home=381m; max_dist_from_home=381m)
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Maintain current altitude and speed settings. Ensure the UAV is armed and operates in AUTO mode for efficient mission execution.
+==========================================
+
+=== ATTEMPT 3 — 2026-09-24 21:23:07 ===
+Outcome: TIMEOUT (max_dist_from_home=394m; max_dist_from_home=394m)
+Failure reason: The altitude decreased, and the UAV switched from AUTO to MANUAL mode, indicating a loss of autonomy. The new waypoint was not as expected, as the UAV deviated significantly from the previous location.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Ensure the UAV maintains its altitude during waypoint navigation and that the geofencing system is robust to prevent mode changes. Consider implementing a fail-safe that checks for unexpected deviations and alerts the operator.
+==========================================
+
+=== ATTEMPT 4 — 2026-09-24 21:32:51 ===
+Outcome: TIMEOUT (max_dist_from_home=370m; max_dist_from_home=370m)
+Failure reason: The UAV's altitude decreased slightly after the command, which is unexpected behavior. Additionally, the UAV switched to MANUAL mode and disarmed, which may indicate a loss of communication or system failure.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Ensure that the geofence and altitude parameters are correctly configured. Check for potential communication issues and system stability. Consider implementing fail-safe mechanisms to prevent unintended mode changes and ensure safe operation.
+==========================================
+
+=== ATTEMPT 5 — 2026-09-24 21:37:51 ===
+Outcome: TIMEOUT (max_dist_from_home=385m; max_dist_from_home=385m)
+Failure reason: The UAV did not reach the intended waypoint and experienced a significant decrease in battery percentage.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Ensure a thorough check of navigation parameters and consider adjusting the UAV's speed or altitude to manage battery consumption more effectively.
+==========================================
+
+=== ATTEMPT 6 — 2026-09-26 09:43:57 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK max_dist_from_home=1413m; max_dist_from_home=1413m)
+Failure reason: MODE CHANGE, NOT PROGRESSING TOWARD MISSION GOAL
+Commands issued: ['LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: RE-ARM AND RE-INITIATE RTL MODE TO RESUME PROGRESS TOWARD MISSION GOAL
+==========================================
+
+=== ATTEMPT 7 — 2026-09-26 10:02:28 ===
+Outcome: COMPLETED (max_dist_from_home=1444m; max_dist_from_home=1444m)
+Failure reason: did not make significant progress towards the mission goal
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'RTL']
+Lessons learned: re-evaluate the mission plan to ensure the UAV is making progress towards the goal, consider adjusting the route or mission parameters
+==========================================
+
+=== ATTEMPT 8 — 2026-09-26 11:23:21 ===
+Outcome: COMPLETED (max_dist_from_home=1436m; max_dist_from_home=1436m)
+Failure reason: NONE
+Commands issued: ['LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Monitor battery level more closely to avoid low battery situations. Consider implementing a battery threshold alarm.
+==========================================
+
+=== ATTEMPT 9 — 2026-09-26 11:39:19 ===
+Outcome: COMPLETED (max_dist_from_home=1448m; max_dist_from_home=1448m)
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Verify battery level before starting the mission
+==========================================
+
+=== ATTEMPT 10 — 2026-09-26 11:54:36 ===
+Outcome: COMPLETED (max_dist_from_home=1445m; max_dist_from_home=1445m)
+Failure reason: NONE
+Commands issued: ['NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Re-evaluate RTL command to avoid significant altitude loss and maintain airspeed.
+==========================================
+
+=== ATTEMPT 11 — 2026-10-06 14:29:38 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK max_dist_from_home=258m; max_dist_from_home=258m)
+Failure reason: Critic LLM did not respond
+Commands issued: ['RTL']
+Lessons learned: Ensure Critic LLM is reachable and prompt is well-formed
+==========================================
+
+=== ATTEMPT 12 — 2026-10-06 14:33:00 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK max_dist_from_home=96m; max_dist_from_home=96m)
+Failure reason: Critic LLM did not respond
+Commands issued: ['RTL']
+Lessons learned: Ensure Critic LLM is reachable and prompt is well-formed
+==========================================
+
+=== ATTEMPT 13 — 2026-10-06 14:35:18 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK max_dist_from_home=97m; max_dist_from_home=97m)
+Failure reason: Critic LLM did not respond
+Commands issued: ['RTL']
+Lessons learned: Ensure Critic LLM is reachable and prompt is well-formed
+==========================================
+
+=== ATTEMPT 14 — 2026-10-06 14:38:45 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK max_dist_from_home=260m; max_dist_from_home=260m)
+Failure reason: Critic LLM did not respond
+Commands issued: ['RTL']
+Lessons learned: Ensure Critic LLM is reachable and prompt is well-formed
+==========================================
+
+=== ATTEMPT 15 — 2026-10-06 14:41:00 ===
+Outcome: REASONING_FAILURE (PARSE_FALLBACK max_dist_from_home=261m; max_dist_from_home=261m)
+Failure reason: Critic LLM did not respond
+Commands issued: ['RTL']
+Lessons learned: Ensure Critic LLM is reachable and prompt is well-formed
+==========================================
+
+=== ATTEMPT 16 — 2026-10-06 16:25:43 ===
+Outcome: TIMEOUT (max_dist_from_home=380m; max_dist_from_home=380m)
+Failure reason: The UAV did not reach the intended waypoint and experienced significant battery consumption.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Increase the battery capacity or optimize the flight path to reduce energy usage. Consider checking the UAV's navigation system for possible errors.
+==========================================
+
+=== ATTEMPT 17 — 2026-10-06 16:35:20 ===
+Outcome: TIMEOUT (max_dist_from_home=383m; max_dist_from_home=383m)
+Failure reason: The UAV did not reach the intended waypoint and experienced significant battery consumption, indicating potential issues with the current flight plan or UAV performance.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Review the flight plan for accuracy and adjust the altitude or route if necessary. Ensure the UAV's performance meets expectations to prevent such deviations.
+==========================================
+
+=== ATTEMPT 18 — 2026-10-06 16:46:31 ===
+Outcome: TIMEOUT (max_dist_from_home=387m; max_dist_from_home=387m)
+Failure reason: Battery consumption was significant and the UAV is no longer in the original waypoint. The altitude has only increased slightly, and the mode changed from RTL to AUTO, indicating the mission is not progressing as expected.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT']
+Lessons learned: Optimize the flight path and reduce unnecessary power consumption. Ensure that waypoints are spaced appropriately to balance exploration and battery life.
+==========================================
+
+=== ATTEMPT 19 — 2026-10-06 17:02:15 ===
+Outcome: REASONING_FAILURE (NO_MEANINGFUL_MOVEMENT max_dist_from_home=344m (threshold=400m); max_dist_from_home=344m)
+Failure reason: Battery consumption was significant and the mission mode changed to MANUAL, indicating issues.
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'RTL']
+Lessons learned: Optimize the flight path to reduce unnecessary battery usage and ensure mission-critical tasks are prioritized.
+==========================================
+
+=== ATTEMPT 20 — 2026-10-06 17:10:21 ===
+Outcome: REASONING_FAILURE (NO_MEANINGFUL_MOVEMENT max_dist_from_home=393m (threshold=400m); max_dist_from_home=393m)
+Failure reason: Significant battery consumption and change in altitude
+Commands issued: ['NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'RTL']
+Lessons learned: Optimize the RTL strategy to minimize battery usage. Consider checking for and addressing any potential issues causing altitude fluctuation.
+==========================================
