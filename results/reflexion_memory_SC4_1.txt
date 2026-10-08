@@ -40,3 +40,31 @@ Failure reason: NONE
 Commands issued: ['LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
 Lessons learned: Consider monitoring battery levels more closely to avoid low-level returns. Review mission planning to ensure sufficient battery reserves.
 ==========================================
+
+=== ATTEMPT 1 — 2026-10-05 15:46:05 ===
+Outcome: CONSTRAINT_VIOLATION (GEOFENCE_VIOLATED (lat=33.7306 lon=72.9806 step=2) reached=[] terminal='RTL')
+Failure reason: battery consumption increased
+Commands issued: ['LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'NAV_WAYPOINT']
+Lessons learned: consider reducing airspeed or adjusting route to minimize battery consumption
+==========================================
+
+=== ATTEMPT 2 — 2026-10-05 16:06:31 ===
+Outcome: COMPLETED (reached=[])
+Failure reason: Battery consumption remains a concern
+Commands issued: ['LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Consider using a different descent profile or adjusting the RTL mode to minimize battery usage
+==========================================
+
+=== ATTEMPT 3 — 2026-10-05 16:20:45 ===
+Outcome: CONSTRAINT_VIOLATION (GEOFENCE_VIOLATED (lat=33.7308 lon=72.9820 step=2) reached=[] terminal='RTL')
+Failure reason: Low battery level, but no further progress made; returning to home
+Commands issued: ['LOITER_TURNS', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'NAV_WAYPOINT', 'NAV_WAYPOINT', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Consider alternative command or continue flying to recharge battery; monitor battery level more closely
+==========================================
+
+=== ATTEMPT 4 — 2026-10-05 16:42:47 ===
+Outcome: COMPLETED (reached=[])
+Failure reason: NONE
+Commands issued: ['LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'LOITER_TURNS', 'RTL']
+Lessons learned: Consider using more efficient descent rate to conserve battery life
+==========================================
